@@ -33,7 +33,7 @@ export class ContactController {
     return this.contactService.create(createContactDto, photo);
   }
 
-  @Post()
+  @Post('login')
   loginUser(@Body() loginDto: LoginDto){
     return this.contactService.login(loginDto)
   }
